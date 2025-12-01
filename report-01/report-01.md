@@ -90,7 +90,8 @@ GoogleスプレッドシートをAPI化し、SheetDBでCRUD操作を学ぶため
 6.  **DELETE操作**
     *   `id=101` のレコードを削除するDELETEリクエストを送信
 ![alt text](<スクリーンショット 2025-11-26 000650.png>)
-![alt text](<スクリーンショット 2025-11-26 000842.png>)
+<img width="825" height="310" alt="スクリーンショット 2025-11-26 000842" src="https://github.com/user-attachments/assets/2bbce39e-354f-474a-8fc2-c2d9e2a5d037" />
+
 7.  **認証設定**
     *   SheetDBの管理画面でBasic認証を設定し、Postmanで認証付きリクエストを送信
 ![alt text](image-2.png)
@@ -142,3 +143,4 @@ GoogleスプレッドシートをAPI化し、SheetDBでCRUD操作を学ぶため
 *   JavaScript（axios）でSheetDB APIを呼び出す簡単なWebページを作成
 
 ***
+
