@@ -80,6 +80,8 @@ GoogleスプレッドシートをAPI化し、SheetDBでCRUD操作を学ぶため
 
 <img width="1691" height="817" alt="スクリーンショット 2025-11-25 115527" src="https://github.com/user-attachments/assets/6658673d-d64e-49d5-ba96-eb0bbd6bc9e3" />
 
+<img width="1724" height="706" alt="スクリーンショット 2025-11-25 115557" src="https://github.com/user-attachments/assets/548e3d14-253c-454a-8458-cfa188326f6c" />
+
 3.  **条件検索（GET with Query）**
     *   `name` が「田中」のレコードだけ取得するGETリクエストを実行
 
@@ -168,5 +170,6 @@ GoogleスプレッドシートをAPI化し、SheetDBでCRUD操作を学ぶため
 *   JavaScript（axios）でSheetDB APIを呼び出す簡単なWebページを作成
 
 ***
+
 
 
