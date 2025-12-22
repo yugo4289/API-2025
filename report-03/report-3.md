@@ -52,7 +52,7 @@
 | Streamlit       | [✓]|        |
 | SQLite（DB 永続化）  | [ ] |        |
 | SQLAlchemy（ORM） | [ ] |        |
-| そのほか            | [✓] |        |
+| そのほか            | [✓] |    requests, uvicorn    |
 
 > ※ SQLite / SQLAlchemy を使用した場合は後半の加点欄も記入
 
@@ -146,7 +146,7 @@ def delete_todo(todo_id: int):
 ## 8. 学習したこと・感想（100文字以上）
 
 > **記入欄：**
-
+FastAPIを使うことで、コードを書くだけで自動的にOpenAPIという仕様書が生成され、ブラウザから簡単に動作確認ができる点に驚きました。また、Streamlitとrequestsライブラリを組み合わせることで、複雑なHTML/CSSを書かなくても実用的なWeb UIが作れることを学びました。フロントエンドとバックエンドを分けて開発し、それらをHTTP通信でつなぐというモダンな開発手法の基礎を体験できて非常に有益でした。
 
 ## チャレンジ課題：  9. SQLite / SQLAlchemy 導入内容
 
@@ -183,5 +183,6 @@ def delete_todo(todo_id: int):
 * [ ] Streamlit UI の画像を貼った
 * [ ] 学習したことを 100 字以上書いた
 * [ ] SQLite / SQLAlchemy の加点欄（使った場合のみ）
+
 
 
