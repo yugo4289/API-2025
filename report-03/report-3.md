@@ -172,7 +172,7 @@ FastAPIを使うことで、コードを書くだけで自動的にOpenAPIとい
 
 | 種類     | URL / 書籍名 |
 | ------ | --------- |
-| Webサイト |      ・https://qiita.com/Hashimoto-Noriaki/items/6dbefe8068dbfe2c236d  ・https://zenn.dev/upgradetech/articles/8d81f8a8df88cc　　・https://zenn.dev/homatsu_tech/articles/d664a65b776efe  |
+| Webサイト |      ・https://qiita.com/Hashimoto-Noriaki/items/6dbefe8068dbfe2c236d  ・https://www.aeyescan.jp/blog/openapi/　・https://zenn.dev/upgradetech/articles/8d81f8a8df88cc　・https://zenn.dev/homatsu_tech/articles/d664a65b776efe  |
 | 書籍     |           |
 | その他    |           |
 
@@ -183,6 +183,7 @@ FastAPIを使うことで、コードを書くだけで自動的にOpenAPIとい
 * [ ] Streamlit UI の画像を貼った
 * [ ] 学習したことを 100 字以上書いた
 * [ ] SQLite / SQLAlchemy の加点欄（使った場合のみ）
+
 
 
 
