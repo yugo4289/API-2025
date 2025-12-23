@@ -113,10 +113,19 @@ def delete_todo(todo_id: int):
 
 | 操作         | 貼付欄 |
 | ---------- | --- |
-| POST（新規追加） |   <img width="1826" height="699" alt="スクリーンショット 2025-12-18 201341" src="https://github.com/user-attachments/assets/a1b51a4d-b2e0-4b85-978a-35eae9e0c2ca" /><img width="1840" height="522" alt="image" src="https://github.com/user-attachments/assets/3c4a5d8b-3e96-4b39-99a9-f04f5e2bbe38" />|
-| GET（一覧取得）  |  <img width="1823" height="824" alt="image" src="https://github.com/user-attachments/assets/aca20d36-9f70-4064-ab45-9790a308d824" /><img width="1818" height="827" alt="image" src="https://github.com/user-attachments/assets/a571d245-ef66-428e-988a-1556e8269217" />|
-| PUT（更新）    |  <img width="1823" height="825" alt="image" src="https://github.com/user-attachments/assets/095178f2-d92f-4797-8349-05222cb99633" /><img width="1823" height="716" alt="image" src="https://github.com/user-attachments/assets/f84f0b55-5439-4a49-bf3d-8dc0c9bfd786" /> |
-| DELETE（削除） |   <img width="1830" height="822" alt="image" src="https://github.com/user-attachments/assets/1fffbcf9-74e0-4bdf-b58b-00422a9e2ad0" /><img width="1833" height="702" alt="image" src="https://github.com/user-attachments/assets/6f1138a7-7bfa-401a-8e60-0cb9b46040c2" />|
+| POST（新規追加） |  <img width="1831" height="654" alt="image" src="https://github.com/user-attachments/assets/a3ba31cc-18e7-43fc-8492-ad0e908ab72c" />
+<img width="1830" height="697" alt="image" src="https://github.com/user-attachments/assets/ad5c0d6d-7cc6-4b4b-a8e9-2c02601886c6" /><img width="1831" height="471" alt="image" src="https://github.com/user-attachments/assets/ca7636d8-4fcf-4736-bcd3-c81fbb428e7f" />
+
+|
+| GET（一覧取得）  |  <img width="1827" height="819" alt="image" src="https://github.com/user-attachments/assets/4076b91b-3280-427e-b119-8e1fd2875ae1" />
+<img width="1826" height="713" alt="image" src="https://github.com/user-attachments/assets/6620a5cb-0986-49ce-a3d1-d7619687586b" />
+|
+| PUT（更新）    |  <img width="1827" height="790" alt="image" src="https://github.com/user-attachments/assets/01a670f0-ff2d-4b3e-83a5-c805f34f17bf" />
+<img width="1832" height="602" alt="image" src="https://github.com/user-attachments/assets/9427d41f-9e3a-4dfd-b36c-1265807c1453" />
+ |
+| DELETE（削除） |  <img width="1829" height="801" alt="image" src="https://github.com/user-attachments/assets/86d2f9dd-35c6-4ade-8807-6a492a0d6585" />
+<img width="1829" height="562" alt="image" src="https://github.com/user-attachments/assets/f4cf27e1-35e6-4861-8649-46a357abf039" />
+|
 
 
 ---
@@ -125,9 +134,11 @@ def delete_todo(todo_id: int):
 
 | 画面キャプチャ       | 貼付欄 |
 | ------------- | --- |
-| 実行画面          |   <img width="1147" height="503" alt="image" src="https://github.com/user-attachments/assets/e91492ed-d0ce-4682-be4e-3dd243ba826b" />
+| 実行画面          |   <img width="1270" height="605" alt="image" src="https://github.com/user-attachments/assets/96f30a4f-abd3-49d1-b9d6-f332bc3ef615" />
+
   |
-| 操作例（追加・更新・削除） |  <img width="1182" height="632" alt="image" src="https://github.com/user-attachments/assets/27a6a6d7-1dbe-4aa0-b01b-d5e2de22007d" />   |
+| 操作例（追加・更新・削除） |  <img width="1168" height="668" alt="image" src="https://github.com/user-attachments/assets/ad2ca5e4-6ac2-460c-8fc3-10758b501cd2" />
+  |
 
 ---
 
@@ -146,7 +157,7 @@ def delete_todo(todo_id: int):
 ## 8. 学習したこと・感想（100文字以上）
 
 > **記入欄：**
-FastAPIを使うことで、コードを書くだけで自動的にOpenAPIという仕様書が生成され、ブラウザから簡単に動作確認ができる点に驚きました。また、Streamlitとrequestsライブラリを組み合わせることで、複雑なHTML/CSSを書かなくても実用的なWeb UIが作れることを学びました。フロントエンドとバックエンドを分けて開発し、それらをHTTP通信でつなぐというモダンな開発手法の基礎を体験できて非常に有益でした。
+FastAPIを使うことで、コードを書くだけで自動的にOpenAPIという仕様書が生成され、ブラウザから簡単に動作確認ができる点に驚きました。また、Streamlitとrequestsライブラリを組み合わせることで、複雑なHTML/CSSを書かなくても実用的なWebサイトが作れることを学びました。フロントエンドとバックエンドを分けて開発し、それらをHTTP通信でつなぐというモダンな開発手法の基礎を体験できて非常に有益でした。
 
 ## チャレンジ課題：  9. SQLite / SQLAlchemy 導入内容
 
@@ -178,11 +189,12 @@ FastAPIを使うことで、コードを書くだけで自動的にOpenAPIとい
 
 **提出前チェックリスト**
 
-* [ ] API のコードを貼った
-* [ ] OpenAPI のスクリーンショットを貼った
-* [ ] Streamlit UI の画像を貼った
-* [ ] 学習したことを 100 字以上書いた
+* ✓ API のコードを貼った
+* ✓ OpenAPI のスクリーンショットを貼った
+* ✓ Streamlit UI の画像を貼った
+* ✓ 学習したことを 100 字以上書いた
 * [ ] SQLite / SQLAlchemy の加点欄（使った場合のみ）
+
 
 
 
