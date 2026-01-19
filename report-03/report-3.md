@@ -64,6 +64,7 @@ APIとは、異なるソフトウェア同士が情報をやり取りするた�
 
 ```python
 # FastAPI の主要コードをここに貼る
+# main.py
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import List, Optional
@@ -106,9 +107,48 @@ def delete_todo(todo_id: int):
             return {"message": "Deleted"}
     raise HTTPException(status_code=404, detail="Todo not found")
 ```
+```
+#app.py
+import streamlit as st
+import requests
 
+URL = "http://127.0.0.1:8000/todos"
+
+st.title("📝 ToDoアプリ")
+
+with st.form("add_todo", clear_on_submit=True):
+    new_title = st.text_input("新しいタスクを入力")
+    submit = st.form_submit_button("追加")
+    if submit and new_title:
+        requests.post(URL, json={"title": new_title})
+        st.rerun()
+
+response = requests.get(URL)
+if response.status_code == 200:
+    todo_list = response.json()
+    
+    for todo in todo_list:
+        col1, col2, col3 = st.columns([0.1, 0.7, 0.2])
+        
+        with col1:
+            if st.checkbox("", value=todo["done"], key=f"check_{todo['id']}"):
+                pass
+
+            if st.session_state.get(f"check_{todo['id']}") != todo["done"]:
+                 requests.put(f"{URL}/{todo['id']}")
+                 st.rerun()
+
+        with col2:
+            display_text = f"~~{todo['title']}~~" if todo["done"] else todo["title"]
+            st.write(display_text)
+
+        with col3:
+            if st.button("削除", key=f"del_{todo['id']}"):
+                requests.delete(f"{URL}/{todo['id']}")
+                st.rerun()
 ---
 
+```
 ## 5. OpenAPI ドキュメント動作確認（スクリーンショット貼付）
 
 | 操作         | 貼付欄 |
@@ -194,6 +234,7 @@ FastAPIを使うことで、コードを書くだけで自動的にOpenAPIとい
 * ✓ Streamlit UI の画像を貼った
 * ✓ 学習したことを 100 字以上書いた
 * [ ] SQLite / SQLAlchemy の加点欄（使った場合のみ）
+
 
 
 
